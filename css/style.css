@@ -72,6 +72,29 @@ body {
   align-items: center;
 }
 
+.contacts .link {
+  color: var(--grey-text-color);
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts-item .link:hover,
+.contacts-item .link:focus {
+  color: var(--accent-text-color);
+}
+.contacts-item .link:hover,
+.contacts-item .link:focus .contacts-icon {
+  fill: var(--accent-text-color);
+}
+
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .contacts-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -99,18 +122,7 @@ body {
 .site-nav .link.current {
   color: var(--accent-text-color);
 }
-.contacts .link {
-  color: var(--grey-text-color);
-  text-decoration: none;
-  font-family: Roboto;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.contacts .link:hover,
-.contacts .link:focus {
-  color: var(--accent-text-color);
-}
+
 /* герой */
 .hero-title {
   margin-top: 0;
@@ -128,9 +140,18 @@ body {
   text-transform: uppercase;
 }
 .hero {
-  background-color: grey;
+  max-width: 1600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/main-page/Header.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
 }
 
@@ -142,7 +163,7 @@ body {
   border-radius: 4px;
   min-width: 200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
+  border: transparent;
   color: var(--white-text-color);
   background-color: var(--accent-text-color);
   font-family: "Roboto", sans-serif;
@@ -186,9 +207,14 @@ body {
 .advantages-item {
   margin: 0;
 }
-.advantages-image img {
+
+.advantages-icon {
   display: block;
+  fill: currentColor;
+  width: 65px;
+  height: 70px;
 }
+
 .advantages-image {
   display: flex;
   justify-content: center;
@@ -269,9 +295,27 @@ body {
 .social-link:not(:last-child) {
   margin-right: 10px;
 }
-
-.social .link:hover {
-  color: var(--accent-text-color);
+.social-icon {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+}
+.social-link .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-link .link:hover,
+.social-link .link:focus {
+  background-color: var(--accent-text-color);
+}
+.social-link .link:hover,
+.social-link .link:focus .social-icon {
+  fill: var(--white-text-color);
 }
 /* постоянные клиенты */
 
@@ -283,7 +327,7 @@ body {
 .client-list:not(:last-child) {
   margin-right: 30px;
 }
-.client-list {
+.client-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,18 +336,26 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-
+.client-icon {
+  fill: #afb1b8;
+}
+.client-list-link:hover,
+.client-list-link:focus {
+  border-color: var(--accent-text-color);
+}
+.client-list-link:hover,
+.client-list-link:focus .client-icon {
+  fill: var(--accent-text-color);
+}
 /* футер*/
 
 .footer .container {
   display: flex;
-  align-items: center;
-}
-
-.footer-address {
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .address p {
   margin-bottom: 9px;
 
@@ -320,13 +372,19 @@ body {
 .address a:not(:last-child) {
   margin-bottom: 9px;
 }
+
+.footer .link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer .social-icon {
+  fill: var(--white-text-color);
+}
 footer {
   background-color: #2f303a;
 }
 
 .footer-join-us {
-  padding-top: 72px;
-  padding-bottom: 100px;
+  margin-right: 94px;
 }
 
 .join-us {
@@ -338,6 +396,35 @@ footer {
   line-height: 1.14;
   text-transform: uppercase;
 }
+
+.footer-button {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  border-radius: 4px;
+  min-width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
+  color: var(--white-text-color);
+  background-color: var(--accent-text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.footer-icon-send {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+
 /* портфолио */
 
 .filters {

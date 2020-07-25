@@ -21,34 +21,32 @@
           >
           <ul class="site-nav list">
             <li class="site-nav-item">
-              <a href="./index.html" class="link">Студия</a>
+              <a href="./index.html" class="link current">Студия</a>
             </li>
             <li class="site-nav-item">
-              <a href="./portfolio.html" class="link current">Портфолио</a>
+              <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
             <li class="site-nav-item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="contacts list">
           <li class="contacts-item">
-            <img
-              src="./images/main-page/envelope(hover).svg"
-              alt="иконка конверта"
-              width="16"
-              height="11"
-            />
             <a href="mailto:info@devstudio.com" class="link"
+              ><svg class="contacts-icon" width="16" height="11">
+                <use
+                  href="./images/main-page/sprite.svg#icon-envelope"
+                ></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li class="contacts-item">
-            <img
-              src="./images/main-page/Vector.svg"
-              alt="иконка телефона"
-              width="10"
-              height="15"
-            />
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="link"
+              ><svg class="contacts-icon" width="12" height="15">
+                <use
+                  href="./images/main-page/sprite.svg#icon-smartphone"
+                ></use></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -255,18 +253,48 @@
           <b class="join-us">Присоединяйтесь</b>
           <ul class="social list">
             <li class="social-link">
-              <a href="" class="link" aria-label="Сссылка на Instagram">In </a>
+              <a href="" class="link" aria-label="Сссылка на Instagram"
+                ><svg class="social-icon">
+                  <use
+                    href="../images/main-page/sprite.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
             </li>
             <li class="social-link">
-              <a href="" class="link" aria-label="Сссылка на Twitter">Tw </a>
+              <a href="" class="link" aria-label="Сссылка на Twitter"
+                ><svg class="social-icon">
+                  <use href="../images/main-page/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-link">
-              <a href="" class="link" aria-label="Сссылка на Facebook">Fa </a>
+              <a href="" class="link" aria-label="Сссылка на Facebook"
+                ><svg class="social-icon">
+                  <use
+                    href="../images/main-page/sprite.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
             </li>
             <li class="social-link">
-              <a href="" class="link" aria-label="Сссылка на LinkedIn">Li </a>
+              <a href="" class="link" aria-label="Сссылка на LinkedIn"
+                ><svg class="social-icon">
+                  <use
+                    href="../images/main-page/sprite.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-sign-us">
+          <b class="join-us">Подпишитесь на рассылку</b>
+          <button class="footer-button" type="button">
+            Подписаться<svg class="footer-icon-send">
+              <use href="../images/main-page/sprite.svg#icon-icon-send"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </footer>
