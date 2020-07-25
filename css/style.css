@@ -313,7 +313,7 @@ body {
 .social-link .link:focus {
   background-color: var(--accent-text-color);
 }
-.social-link .link:hover,
+.social-link .link:hover .social-icon,
 .social-link .link:focus .social-icon {
   fill: var(--white-text-color);
 }
@@ -343,7 +343,7 @@ body {
 .client-list-link:focus {
   border-color: var(--accent-text-color);
 }
-.client-list-link:hover,
+.client-list-link:hover .client-icon,
 .client-list-link:focus .client-icon {
   fill: var(--accent-text-color);
 }
